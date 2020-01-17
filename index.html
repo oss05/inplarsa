@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inplarsa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <label for="toggle" class="nav-bar__label"><img class="burguerLogo" src="./assets/img/burguer-menu.png"
+                    alt=""></label>
+            <input type="checkbox" id="toggle" class="nav-bar__toggle">
+            <ul class="nav-bar__list">
+                <img class="m-4 ml-5 logo-nav" src="./assets/img/logo-IMPLARSA.png" alt="">
+                <li class="nav-bar__list-item">
+                    <a href="#quienesSomos" class="nav-bar__link">¿QUIÉNES SOMOS?</a>
+                </li>
+                <li class="nav-bar__list-item">
+                    <a href="#sustentabilidad" class="nav-bar__link">SUSTENTABILIDAD</a>
+                </li>
+                <li class="nav-bar__list-item">
+                    <a href="#productos" class="nav-bar__link">PRODUCTOS</a>
+                </li>
+                <li class="nav-bar__list-item">
+                    <a href="#" class="nav-bar__link">OLA MÉXICO</a>
+                </li>
+                <li class="nav-bar__list-item">
+                    <a href="./pages/circular-economy.html" class="nav-bar__link">ECONOMÍA CIRCULAR</a>
+                </li>
+                <li class="nav-bar__list-item">
+                    <a href="./pages/contact.html" class="nav-bar__link">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <section class="socialNetworks p-3 d-flex flex-column">
+                <a href=""><img class="m-2" src="./assets/icons/facebook.svg" alt="facebook"></a>
+                <a href=""><img class="m-2" src="./assets/icons/twitter.svg" alt="twitter"></a>
+            </section>
+            <section class="goUp p-4">
+                <a href="#"><img src="./assets/icons/up-arrow.svg" alt="up arrow"></a>
+            </section>
+            <div class="customContainer" id="quienesSomos">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <!-- <li data-target="#myCarousel" data-slide-to="3"></li> -->
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <!-- <video src="./assets/videos/Agua.mp4" autoplay loop alt="Chania"></video> -->
+                            <img src="./assets/img/sea.png" alt="sea">
+                            <div class="carousel-caption">
+                                <p>INPLARSA® es una empresa mexicana con un respaldo de más de 35 años de experiencia de
+                                    su
+                                    fundador y socios, dedicada al reciclaje, regeneración y comercialización de
+                                    polímeros,
+                                    teniendo como principal línea de negocio la formulación de compuestos hechos a la
+                                    medida
+                                    de las necesidades de nuestros clientes.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- <video src="./assets/videos/Fog on St-Lawrence River.mp4" autoplay loop alt="Chania"></video> -->
+                            <img src="./assets/img/mountains.png" alt="mountains">
+                            <div class="carousel-caption">
+                                <p>INPLARSA® es una empresa mexicana con un respaldo de más de 35 años de experiencia de
+                                    su
+                                    fundador y socios, dedicada al reciclaje, regeneración y comercialización de
+                                    polímeros,
+                                    teniendo como principal línea de negocio la formulación de compuestos hechos a la
+                                    medida
+                                    de las necesidades de nuestros clientes.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- <video src="./assets/videos/Naturaleza.mp4" autoplay loop alt="Chania"></video> -->
+                            <img src="./assets/img/sea2.png" alt="sea">
+                            <div class="carousel-caption">
+                                <p>INPLARSA® es una empresa mexicana con un respaldo de más de 35 años de experiencia de
+                                    su
+                                    fundador y socios, dedicada al reciclaje, regeneración y comercialización de
+                                    polímeros,
+                                    teniendo como principal línea de negocio la formulación de compuestos hechos a la
+                                    medida
+                                    de las necesidades de nuestros clientes.</p>
+                            </div>
+                        </div>
+                        <!-- <div class="item">
+                                    <video src="./assets/videos/Tiny Waterfall.mp4" autoplay loop alt="Chania"></video>
+                                    <div class="carousel-caption">
+                                        <p>INPLARSA® es una empresa mexicana con un respaldo de más de 35 años de experiencia de su fundador y socios, dedicada al reciclaje, regeneración y comercialización de polímeros, teniendo como principal línea de negocio la formulación de compuestos hechos a la medida de las necesidades de nuestros clientes.</p>
+                                    </div>
+                                </div> -->
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <section class="row flex-column flex-lg-row justify-content-lg-between backgroundHome" id="sustentabilidad">
+                <article class="col-lg-3 sustentabilidad pt-5 pl-5">
+                    <div class="d-flex align-items-center ml-4">
+                        <hr>
+                        <h2 class="my-lg-5">Sustentabilidad</h2>
+                    </div>
+                    <p class="ml-5">Uno de los principales desafíos que México enfrenta en materia de sustentabilidad es
+                        incorporar
+                        al medio ambiente como uno de los elementos de la competitividad.</p>
+                </article>
+                <article class="col-lg-6 d-flex justify-content-center align-items-center tablaReciclaje">
+                    <img src="./assets/img/tabla-reciclaje.png" alt="tabla reciclaje">
+                </article>
+                <article class="col-lg-3 mb-3 mt-lg-5 d-flex justify-content-end align-items-start acopio">
+                    <img src="./assets/img/acopio.png" alt="acopio">
+                </article>
+            </section>
+        </section>
+        <section class="counterContainer py-4">
+            <div
+                class="d-flex flex-column flex-lg-row justify-content-lg-between justify-content-center align-items-center">
+                <p class="text-center mb-3">
+                    <span class="bigSizeCounter">1</span> tonelada de plástico <br class="d-none d-lg-block"> puede
+                    ahorrar hasta <br class="d-none d-lg-block">
+                    <span class="counter bigSizeCounter"> 7,500 </span>
+                    <span class="bigSizeCounter">L</span> <br class="d-none d-lg-block"> de agua.
+                </p>
+                <p class="text-center">
+                    El reciclaje de <br class="d-none d-lg-block"> botella de plastico <br class="d-none d-lg-block">
+                    puede conservar la energía <br class="d-none d-lg-block"> para iluminar una
+                    bombilla de <br>
+                    <span class="counter bigSizeCounter">600</span>
+                    <span class="bigSizeCounter">W por</span>
+                    <span class="counter bigSizeCounter">6</span>
+                    <span class="bigSizeCounter">horas.</span>
+                </p>
+            </div>
+        </section>
+        <section class="cardsContainer mt-5">
+            <section class="row justify-content-lg-around justify-content-center">
+                <div class="col-10 col-lg-3 d-flex">
+                    <div>
+                        <img src="./assets/icons/atom.png" alt="atom">
+                    </div>
+                    <div>
+                        <h2>Excelentes características</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos, voluptatem odio
+                            in beatae officia eum nihil corrupti, voluptate neque quam corporis, modi repudiandae
+                            debitis deleniti. Eum distinctio reiciendis odio?</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 d-flex">
+                    <div>
+                        <img src="./assets/icons/atom.png" alt="atom">
+                    </div>
+                    <div>
+                        <h2>Diseño de primera clase</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos, voluptatem odio
+                            in beatae officia eum nihil corrupti, voluptate neque quam corporis, modi repudiandae
+                            debitis deleniti. Eum distinctio reiciendis odio?</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 d-flex">
+                    <div>
+                        <img src="./assets/icons/recycle.png" alt="recycle">
+                    </div>
+                    <div>
+                        <h2>Totalmente Responsable</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos, voluptatem odio
+                            in beatae officia eum nihil corrupti, voluptate neque quam corporis, modi repudiandae
+                            debitis deleniti. Eum distinctio reiciendis odio?</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="cardsContainer mt-5">
+            <div class="row justify-content-lg-around justify-content-center">
+                <div class="col-10 col-lg-3 d-flex">
+                    <div>
+                        <img src="./assets/icons/atom.png" alt="atom">
+                    </div>
+                    <div>
+                        <h2>Excelentes características</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos, voluptatem odio
+                            in beatae officia eum nihil corrupti, voluptate neque quam corporis, modi repudiandae
+                            debitis deleniti. Eum distinctio reiciendis odio?</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 d-flex">
+                    <div>
+                        <img src="./assets/icons/atom.png" alt="atom">
+                    </div>
+                    <div>
+                        <h2>Diseño de primera clase</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos, voluptatem odio
+                            in beatae officia eum nihil corrupti, voluptate neque quam corporis, modi repudiandae
+                            debitis deleniti. Eum distinctio reiciendis odio?</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 d-flex">
+                    <div>
+                        <img src="./assets/icons/recycle.png" alt="recycle">
+                    </div>
+                    <div>
+                        <h2>Totalmente Responsable</h2>
+                        <p id="productos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos, voluptatem odio
+                            in beatae officia eum nihil corrupti, voluptate neque quam corporis, modi repudiandae
+                            debitis deleniti. Eum distinctio reiciendis odio?</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="d-flex align-items-center justify-content-start ml-4 productos pl-5">
+            <hr>
+            <h2 class="my-lg-5">Productos</h2>
+        </div>
+        <section class="productsContainer">
+            <section class="row justify-content-center">
+                <div class="col-10 col-lg-6 mx-3 my-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus soluta nesciunt quo
+                            aliquid temporibus eum at, illum quaerat porro error quis alias tenetur ut obcaecati dolore
+                            modi autem quidem. Nesciunt.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 mx-3 my-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus soluta nesciunt quo
+                            aliquid temporibus eum at, illum quaerat porro error quis alias tenetur ut obcaecati dolore
+                            modi autem quidem. Nesciunt.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 mx-2 my-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus soluta nesciunt quo
+                            aliquid temporibus eum at, illum quaerat porro error quis alias tenetur ut obcaecati dolore
+                            modi autem quidem. Nesciunt.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 mx-2 my-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus soluta nesciunt quo
+                            aliquid temporibus eum at, illum quaerat porro error quis alias tenetur ut obcaecati dolore
+                            modi autem quidem. Nesciunt.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 mx-2 my-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus soluta nesciunt quo
+                            aliquid temporibus eum at, illum quaerat porro error quis alias tenetur ut obcaecati dolore
+                            modi autem quidem. Nesciunt.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 mx-3 my-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus soluta nesciunt quo
+                            aliquid temporibus eum at, illum quaerat porro error quis alias tenetur ut obcaecati dolore
+                            modi autem quidem. Nesciunt.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-6 mx-3 my-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus soluta nesciunt quo
+                            aliquid temporibus eum at, illum quaerat porro error quis alias tenetur ut obcaecati dolore
+                            modi autem quidem. Nesciunt.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 mx-2 my-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus soluta nesciunt quo
+                            aliquid temporibus eum at, illum quaerat porro error quis alias tenetur ut obcaecati dolore
+                            modi autem quidem. Nesciunt.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 mx-2 my-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus soluta nesciunt quo
+                            aliquid temporibus eum at, illum quaerat porro error quis alias tenetur ut obcaecati dolore
+                            modi autem quidem. Nesciunt.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 mx-2 my-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus soluta nesciunt quo
+                            aliquid temporibus eum at, illum quaerat porro error quis alias tenetur ut obcaecati dolore
+                            modi autem quidem. Nesciunt.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="nuevosDesarrollosContainer my-5">
+            <section class="row justify-content-center">
+                <article class="col-lg-3 d-flex justify-content-end pr-5 pt-4">
+                    <p><span>Nuevos</span> Desarrollos</p>
+                </article>
+                <article class="col-lg-6 d-lg-flex justify-content-lg-center align-items-lg-center p-5">
+                    <div class="mr-4 d-flex justify-content-center mb-4">
+                        <img src="./assets/img/new-product.png" alt="new product">
+                    </div>
+                    <p class="d-flex flex-column justify-content-center align-items-center m-3 text-justify">
+                        <span>Desarrollamos nuevos productos</span> lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nesciunt, sunt dolorem dolor natus
+                        nemo asperiores sint, facilis voluptatibus doloremque architecto dicta, vitae maiores fugit!
+                        Ipsum provident alias officia nostrum delectus.</p>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <section class="row flex-column flex-lg-row pt-5">
+                <section class="col-12 col-lg-3 d-flex flex-column justify-content-center align-items-center">
+                    <p class="text-center ml-5">José María Morelos y Pavón 75 A Col. San Pedro Ahuacatlán <br>
+                        San Juan del Río, Querétaro CP. 76810
+                    </p>
+                    <p>Tel. (427) 271 2664</p>
+                </section>
+                <section class="col-12 col-lg-3 text-center">
+                    <a href="mailto:contacto@inplarsa.com.mx">contacto@inplarsa.com.mx</a> <br>
+                    <a href="">Aviso de privacidad</a>
+                    <p>Copyright © 2018 INPLARSA</p>
+                </section>
+                <section class="col-12 col-lg-6">
+                    <p>Designed by</p>
+                    <img src="./assets/img/logo-soma.png" alt="soma logo" style="width: 200px;">
+                </section>
+            </section>
+        </section>
+    </footer>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
