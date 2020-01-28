@@ -215,19 +215,19 @@ hr {
 
 .counterContainer>div p {
     color: #fff;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: lighter;
     margin: 0;
     line-height: 25px;
 }
 
 .bigSizeCounter {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 900;
 }
 
 .cardsContainer>section div div img {
-    margin-top: 20px;
+    margin-top: 5px;
     margin-right: 15px;
 }
 
@@ -248,10 +248,53 @@ hr {
     color: #25802A;
 }
 
-.productsContainer>section div {
-    background: green;
+.image1 {
+    background-image: url('../assets/img/pellets/PE Pellet Alto Peso Molecular (APM) (1).png');
     height: 350px;
     padding: 0;
+    background-size: cover;
+}
+
+.image2 {
+    background-image: url('../assets/img/pellets/PE Pellet Negro (1).png');
+    height: 350px;
+    padding: 0;
+    background-size: cover;
+}
+
+.image3 {
+    background-image: url('../assets/img/pellets/PP Pellet Beige (1).png');
+    height: 350px;
+    padding: 0;
+    background-size: cover;
+}
+
+.image4 {
+    background-image: url('../assets/img/pellets/PP Pellet Etiqueta Marron (1).png');
+    height: 350px;
+    padding: 0;
+    background-size: cover;
+}
+
+.image5 {
+    background-image: url('../assets/img/pellets/PS Pellet Gris (1).png');
+    height: 350px;
+    padding: 0;
+    background-size: cover;
+}
+
+.image6 {
+    background-image: url('../assets/img/pellets/PS Pellet Negro (1).png');
+    height: 350px;
+    padding: 0;
+    background-size: cover;
+}
+
+.image7 {
+    background-image: url('../assets/img/pellets/TPO Pellet Negro (1).png');
+    height: 350px;
+    padding: 0;
+    background-size: cover;
 }
 
 .productsContainer>section div div {
@@ -260,6 +303,8 @@ hr {
     padding: 1em;
     color: transparent;
     transition: 0.5s all ease;
+    font-size: 2em;
+    text-align: center;
 }
 
 .productsContainer>section div div:hover {
