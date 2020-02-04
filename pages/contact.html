@@ -48,14 +48,40 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.766663599528!2d-99.98935608405174!3d20.433681213199545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d374a91fe4f961%3A0x14cabfb0d7d5f999!2sInplarsa%2C%20Ingenieria%20En%20Plasticos%20Reciclados!5e0!3m2!1ses!2smx!4v1579280455487!5m2!1ses!2smx"
                 width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </section>
-        <section class="d-flex flex-column align-items-center justify-content-center text-center mt-4">
-            <p>
-                José María Morelos y Pavón 75 A <br>
-                Col. San Pedro Ahuacatlán <br>
-                San Juan del Río, Querétaro CP. 76810 <br>
-                Tel. (427) 271 2664 <br>
-            </p>
-            <a href="mailto:contacto@inplarsa.com.mx">contacto@inplarsa.com.mx</a>
+        <section class="d-flex flex-column align-items-center justify-content-center mt-4">
+            <div id="contact-form">
+                <div>
+                    <h2>Contactanos.</h2> 
+                    <h4>Responderemos a la brevedad.</h4> 
+                </div>
+                    <p id="failure">Oopsie...message not sent.</p>  
+                    <p id="success">Your message was sent successfully. Thank you!</p>
+            
+                       <form action="https://formspree.io/mpzdrzwq" method="POST">
+                        <div>
+                          <label for="name">
+                              <span class="required">Nombre: *</span> 
+                              <input type="text" id="name" name="name" value="" placeholder="Nombre" required="required" tabindex="1" autofocus="autofocus" />
+                          </label> 
+                        </div>
+                        <div>
+                          <label for="email">
+                              <span class="required">Email: *</span>
+                              <input type="email" id="email" name="email" value="" placeholder="Email" tabindex="2" required="required" />
+                          </label>  
+                        </div>
+                        <div>		          
+                          <label for="message">
+                              <span class="required">Mensaje: *</span> 
+                              <textarea id="message" name="message" placeholder="Mensaje." tabindex="5" required="required"></textarea> 
+                          </label>  
+                        </div>
+                        <div>		           
+                          <button name="submit" type="submit" id="submit" target="_blank">ENVIAR</button> 
+                        </div>
+                       </form>
+            
+                </div>
         </section>
     </main>
     <footer>
