@@ -1,3 +1,7 @@
+.economyText>p {
+    font-size: 15px;
+}
+
 .economyText>p span{
     font-weight: bold;
 }

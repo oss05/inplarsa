@@ -8,14 +8,17 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/circular-economy.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Inplarsa - Economía Circular</title>
 </head>
 
 <body>
     <header>
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="navbar">
             <label for="toggle" class="nav-bar__label"><img class="burguerLogo" src="../assets/img/burguer-menu.png"
                     alt=""></label>
             <input type="checkbox" id="toggle" class="nav-bar__toggle">
@@ -31,7 +34,7 @@
                     <a href="../index.html#productos" class="nav-bar__link">PRODUCTOS</a>
                 </li>
                 <li class="nav-bar__list-item">
-                    <a href="#" class="nav-bar__link">OLA MÉXICO</a>
+                    <a href="../pages/contstruction.html" target="_blank" class="nav-bar__link">OLA MÉXICO</a>
                 </li>
                 <li class="nav-bar__list-item">
                     <a href="#" class="nav-bar__link">ECONOMÍA CIRCULAR</a>
@@ -43,28 +46,43 @@
         </nav>
     </header>
     <main class="mb-4">
+        <section class="socialNetworks p-3 d-flex flex-column">
+            <a href=""><img class="m-2" src="../assets/icons/facebook.svg" alt="facebook"></a>
+            <a href=""><img class="m-2" src="../assets/icons/twitter.svg" alt="twitter"></a>
+        </section>
+        <section class="goUp p-4">
+            <a href="#"><img src="../assets/icons/up-arrow.svg" alt="up arrow"></a>
+        </section>
         <section class="container pt-5">
-            <section class="row justify-content-lg-between">
-                <article class="col-lg-5 economyText">
-                    <div class="d-flex align-items-center ml-4">
+            <section class="row justify-content-lg-between mt-5 mt-md-0">
+                <article class="col-lg-5 economyText d-flex flex-column justify-content-center">
+                    <div class="d-flex align-items-center animated forwards fadeInLeft wow" data-wow-duration="2s">
                         <hr>
                         <h2 class="my-lg-5">Economía Circular</h2>
                     </div>
-                    <p>En <span>INPLARSA</span> somos conscientes del sector en el que nos movemos y estamos
+                    <p class=" animated forwards fadeIn wow" data-wow-duration="2s" data-wow-delay="1s">En
+                        <span>INPLARSA</span> somos
+                        conscientes del sector en el que nos movemos y estamos
                         constantemente
                         investigando en la mejora de nuestros sistemas de recuperación del plastico para ganar
                         prestaciones y garantizar su reciclado al 100%, porque solo la dirección hacia la sostenibilidad
                         es la que tiene futuro.</p>
-                    <p>La economía lineal tradicional utiliza el modelo económico “extraer, fabricar, disponer” que se
+                    <p class=" animated forwards fadeIn wow" data-wow-duration="2s" data-wow-delay="1s">La economía
+                        lineal tradicional
+                        utiliza el modelo económico “extraer, fabricar, disponer” que se
                         basa en grandes cantidades de materiales baratos, de fácil acceso y consumo de energía. No es un
                         modelo sostenible y muchos creen que ahora estamos llegando a su límite, al de agotamiento de
                         materias primas.</p>
-                    <p>Una economía circular tiene como objetivo ser una alternativa viable que vuelve a utilizar
+                    <p class=" animated forwards fadeIn wow" data-wow-duration="2s" data-wow-delay="1s">Una economía
+                        circular tiene como
+                        objetivo ser una alternativa viable que vuelve a utilizar
                         siempre que sea posible y diseña productos que pueden ser “hechos para ser hechos de nuevo” con
                         menor consumo de energía que en su obtención original y además usando sistemas de energía
                         renovable.</p>
                 </article>
-                <article class="col-lg-5 circularEconomyContainer d-flex flex-column justify-content-lg-between">
+                <article
+                    class="col-lg-5 circularEconomyContainer d-flex flex-column justify-content-lg-between animated forwards fadeInRight wow"
+                    data-wow-duration="2s">
                     <img class="my-5" src="../assets/img/economia-circular.png" alt="economia circular">
                     <img class="my-5" src="../assets/img/economia-circular-1-1.png" alt="economia circular">
                 </article>
@@ -72,8 +90,8 @@
         </section>
         <section class="container">
             <section class="row">
-                <article class="col-12 circularEconomyContainer">
-                    <img src="../assets/img/economia-circular-2.png" alt="economia circular">
+                <article class="col-12 circularEconomyContainer animated forwards fadeInUp wow" data-wow-duration="2s">
+                    <img src=" ../assets/img/economia-circular-2.png" alt="economia circular">
                 </article>
             </section>
         </section>
@@ -99,6 +117,20 @@
             </section>
         </section>
     </footer>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-72.14px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+        new WOW().init();
+    </script>
 </body>
 
 </html>

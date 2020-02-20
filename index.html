@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body>
     <header>
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="navbar">
             <label for="toggle" class="nav-bar__label"><img class="burguerLogo" src="./assets/img/burguer-menu.png"
                     alt=""></label>
             <input type="checkbox" id="toggle" class="nav-bar__toggle">
@@ -41,7 +41,7 @@
                     <a href="#productos" class="nav-bar__link">PRODUCTOS</a>
                 </li>
                 <li class="nav-bar__list-item">
-                    <a href="#" class="nav-bar__link">OLA MÉXICO</a>
+                    <a href="./pages/contstruction.html" target="_blank" class="nav-bar__link">OLA MÉXICO</a>
                 </li>
                 <li class="nav-bar__list-item">
                     <a href="./pages/circular-economy.html" class="nav-bar__link">ECONOMÍA CIRCULAR</a>
@@ -61,6 +61,7 @@
             <section class="goUp p-4">
                 <a href="#"><img src="./assets/icons/up-arrow.svg" alt="up arrow"></a>
             </section>
+            <h1 class="main-title d-none d-lg-block"> Nos encargamos <br>  de Mejorar <br> el Planeta </h1>
             <div class="customContainer" id="quienesSomos">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%;">
                     <!-- Indicators -->
@@ -73,8 +74,9 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <video src="./assets/videos/Serenity Beach.mp4" autoplay muted="true" loop alt="serenity beach"></video>
-                            <div class="carousel-caption">
+                            <video src="./assets/videos/Serenity Beach.mp4" autoplay muted="true" loop
+                                alt="serenity beach"></video>
+                            <div class="carousel-caption d-none d-lg-block">
                                 <p>INPLARSA® es una empresa mexicana con un respaldo de más de 35 años de experiencia de
                                     su
                                     fundador y socios, dedicada al reciclaje, regeneración y comercialización de
@@ -87,7 +89,7 @@
                         <div class="item">
                             <video src="./assets/videos/Tiny Water Fall.mp4" autoplay muted="true" loop
                                 alt="tiny waterfall"></video>
-                            <div class="carousel-caption">
+                            <div class="carousel-caption d-none d-lg-block">
                                 <p>INPLARSA® es una empresa mexicana con un respaldo de más de 35 años de experiencia de
                                     su
                                     fundador y socios, dedicada al reciclaje, regeneración y comercialización de
@@ -98,8 +100,9 @@
                             </div>
                         </div>
                         <div class="item">
-                            <video src="./assets/videos/Wild River.mp4" autoplay muted="true" loop alt="wild river"></video>
-                            <div class="carousel-caption">
+                            <video src="./assets/videos/Wild River.mp4" autoplay muted="true" loop
+                                alt="wild river"></video>
+                            <div class="carousel-caption d-none d-lg-block">
                                 <p>INPLARSA® es una empresa mexicana con un respaldo de más de 35 años de experiencia de
                                     su
                                     fundador y socios, dedicada al reciclaje, regeneración y comercialización de
@@ -110,8 +113,9 @@
                             </div>
                         </div>
                         <div class="item">
-                            <video src="./assets/videos/Tiny Waterfall.mp4" autoplay muted="true" loop alt="waterfall"></video>
-                            <div class="carousel-caption">
+                            <video src="./assets/videos/Tiny Waterfall.mp4" autoplay muted="true" loop
+                                alt="waterfall"></video>
+                            <div class="carousel-caption d-none d-lg-block">
                                 <p>INPLARSA® es una empresa mexicana con un respaldo de más de 35 años de experiencia de
                                     su fundador y socios, dedicada al reciclaje, regeneración y comercialización de
                                     polímeros, teniendo como principal línea de negocio la formulación de compuestos
@@ -134,18 +138,23 @@
         <section>
             <section class="row flex-column flex-lg-row justify-content-lg-between backgroundHome" id="sustentabilidad">
                 <article class="col-lg-3 sustentabilidad pt-5 pl-5">
-                    <div class="d-flex align-items-center ml-4">
+                    <div class="d-flex align-items-center ml-4 animated forwards fadeInLeft wow" data-wow-duration="2s">
                         <hr>
-                        <h2 class="my-lg-5 animated forwards fadeInLeft delay-0s">Sustentabilidad</h2>
+                        <h2 class="my-lg-5">Sustentabilidad</h2>
                     </div>
-                    <p class="ml-5">Uno de los principales desafíos que México enfrenta en materia de sustentabilidad es
+                    <p class="ml-5 animated forwards fadeInLeft wow" data-wow-delay="1s">Uno de los principales desafíos
+                        que México
+                        enfrenta en materia de sustentabilidad es
                         garantizar un giro en las actuales políticas destructoras del medio ambiente e integrarlo como
                         uno de los elementos de la competitividad.</p>
                 </article>
-                <article class="col-lg-6 d-flex justify-content-center align-items-center tablaReciclaje">
+                <article
+                    class="col-lg-6 d-flex justify-content-center align-items-center tablaReciclaje animated forwards fadeInUp delay-0s wow"
+                    data-wow-duration="2s">
                     <img src="./assets/img/reciclaje.png" alt="tabla reciclaje">
                 </article>
-                <article class="col-lg-3 mb-3 mt-lg-5 d-flex justify-content-end align-items-start acopio">
+                <article class="col-lg-3 mb-3 mt-lg-5 d-flex justify-content-end align-items-start acopio animated forwards fadeIn
+                Right wow" data-wow-duration="2s">
                     <img src="./assets/img/regeneracion.png" alt="acopio">
                 </article>
             </section>
@@ -165,16 +174,17 @@
         </section>
         <section class="cardsContainer mt-5">
             <section class="row justify-content-lg-around justify-content-center">
-                <div class="col-10 col-lg-3 d-flex">
+                <div class="col-10 col-lg-3 d-flex animated forwards fadeIn delay-0s wow" data-wow-duration="2s">
                     <div>
                         <img src="./assets/icons/Grupo 538.png" alt="atom">
                     </div>
                     <div>
                         <!-- <h2>Excelentes características</h2> -->
-                        <p>Más del 4% de la producción de petróleo en el mundo se usa para la producción de plástico.</p>
+                        <p>Más del 4% de la producción de petróleo en el mundo se usa para la producción de plástico.
+                        </p>
                     </div>
                 </div>
-                <div class="col-10 col-lg-3 d-flex">
+                <div class="col-10 col-lg-3 d-flex animated forwards fadeIn delay-0s wow" data-wow-duration="2s">
                     <div>
                         <img src="./assets/icons/Grupo 531.png" alt="energy icon">
                     </div>
@@ -184,7 +194,7 @@
                             producción de plástico nuevo.</p>
                     </div>
                 </div>
-                <div class="col-10 col-lg-3 d-flex">
+                <div class="col-10 col-lg-3 d-flex animated forwards fadeIn delay-0s wow" data-wow-duration="2s">
                     <div>
                         <img src="./assets/icons/Grupo 536.png" alt="recycle">
                     </div>
@@ -198,7 +208,7 @@
         </section>
         <section class="cardsContainer mt-5">
             <section class="row justify-content-lg-around justify-content-center">
-                <div class="col-10 col-lg-3 d-flex">
+                <div class="col-10 col-lg-3 d-flex animated forwards fadeIn delay-0s wow" data-wow-duration="2s">
                     <div>
                         <img src="./assets/icons/Grupo 535.png" alt="atom">
                     </div>
@@ -208,7 +218,7 @@
                             encendida durante 6 horas.</p>
                     </div>
                 </div>
-                <div class="col-10 col-lg-3 d-flex">
+                <div class="col-10 col-lg-3 d-flex animated forwards fadeIn delay-0s wow" data-wow-duration="2s">
                     <div>
                         <img src="./assets/icons/Grupo 537.png" alt="atom">
                     </div>
@@ -219,55 +229,62 @@
                             invernadero y los residuos generados en el proceso.</p>
                     </div>
                 </div>
-                <div class="col-10 col-lg-3 d-flex">
+                <div class="col-10 col-lg-3 d-flex animated forwards fadeIn delay-0s wow" data-wow-duration="2s">
                     <div>
                         <img src="./assets/icons/Grupo 533.png" alt="recycle">
                     </div>
                     <div>
                         <!-- <h2>Totalmente Responsable</h2> -->
-                        <p id="productos">Se necesitan casi 91 millones de litros de petróleo para producir 1,000
+                        <p>Se necesitan casi 91 millones de litros de petróleo para producir 1,000
                             millones de botellas plásticas.</p>
                     </div>
                 </div>
             </section>
         </section>
-        <div class="d-flex align-items-center justify-content-start ml-4 productos pl-5">
+        <div class="d-flex align-items-center justify-content-start ml-4 productos pl-5" id="productos">
             <hr>
             <h2 class="my-lg-5">Productos</h2>
         </div>
         <section class="productsContainer mb-4">
             <section class="row justify-content-center">
-                <div class="col-10 col-lg-6 mx-3 my-3 image1">
+                <div class="col-10 col-lg-6 mx-3 my-3 image1 animated forwards fadeIn delay-0s wow"
+                    data-wow-duration="2s">
                     <div class="d-flex justify-content-center align-items-center">
                         <p>PE Pellet Alto Peso Molecular (APM)</p>
                     </div>
                 </div>
-                <div class="col-10 col-lg-3 mx-3 my-3 image2">
+                <div class="col-10 col-lg-3 mx-3 my-3 image2 animated forwards fadeIn delay-0s wow"
+                    data-wow-duration="2s">
                     <div class="d-flex justify-content-center align-items-center">
                         <p>PE Pellet Negro</p>
                     </div>
                 </div>
-                <div class="col-10 col-lg-3 mx-2 my-3 image3">
+                <div class="col-10 col-lg-3 mx-2 my-3 image3 animated forwards fadeIn delay-0s wow"
+                    data-wow-duration="2s">
                     <div class="d-flex justify-content-center align-items-center">
                         <p>PP Pellet Beige</p>
                     </div>
                 </div>
-                <div class="col-10 col-lg-3 mx-2 my-3 image4">
+                <div class="col-10 col-lg-3 mx-2 my-3 image4 animated forwards fadeIn delay-0s wow"
+                    data-wow-duration="2s">
                     <div class="d-flex justify-content-center align-items-center">
                         <p>PP Pellet Etiqueta Marron </p>
                     </div>
                 </div>
-                <div class="col-10 col-lg-3 mx-2 my-3 image5">
+                <div class="col-10 col-lg-3 mx-2 my-3 image5 animated forwards fadeIn delay-0s wow"
+                    data-wow-duration="2s">
                     <div class="d-flex justify-content-center align-items-center">
                         <p>PS Pellet Gris </p>
                     </div>
                 </div>
-                <div class="col-10 col-lg-3 mx-3 my-3 image6">
+                <div class="col-10 col-lg-3 mx-3 my-3 image6 animated forwards fadeIn delay-0s wow"
+                    data-wow-duration="2s">
                     <div class="d-flex justify-content-center align-items-center">
                         <p>PS Pellet Negro </p>
                     </div>
                 </div>
-                <div class="col-10 col-lg-6 mx-3 my-3 image7">
+                <div class="col-10 col-lg-6 mx-3 my-3 image7 animated forwards fadeIn delay-0s wow"
+                    data-wow-duration="2s">
                     <div class="d-flex justify-content-center align-items-center">
                         <p>TPO Pellet Negro </p>
                     </div>
@@ -311,6 +328,20 @@
             </section>
         </section>
     </footer>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-72.14px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+        new WOW().init();
+    </script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="./js/jquery.counterup.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

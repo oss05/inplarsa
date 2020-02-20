@@ -8,14 +8,17 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Inplarsa - Contacto</title>
 </head>
 
 <body>
     <header>
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="navbar">
             <label for="toggle" class="nav-bar__label"><img class="burguerLogo" src="../assets/img/burguer-menu.png"
                     alt=""></label>
             <input type="checkbox" id="toggle" class="nav-bar__toggle">
@@ -31,7 +34,7 @@
                     <a href="../index.html#productos" class="nav-bar__link">PRODUCTOS</a>
                 </li>
                 <li class="nav-bar__list-item">
-                    <a href="#" class="nav-bar__link">OLA MÉXICO</a>
+                    <a href="./contstruction.html" target="_blank" class="nav-bar__link">OLA MÉXICO</a>
                 </li>
                 <li class="nav-bar__list-item">
                     <a href="./circular-economy.html" class="nav-bar__link">ECONOMÍA CIRCULAR</a>
@@ -42,46 +45,56 @@
             </ul>
         </nav>
     </header>
+    <section class="socialNetworks p-3 d-flex flex-column">
+        <a href=""><img class="m-2" src="../assets/icons/facebook.svg" alt="facebook"></a>
+        <a href=""><img class="m-2" src="../assets/icons/twitter.svg" alt="twitter"></a>
+    </section>
+    <section class="goUp p-4">
+        <a href="#"><img src="../assets/icons/up-arrow.svg" alt="up arrow"></a>
+    </section>
     <main class="d-flex flex-column flex-lg-row mainContact align-items-center">
         <section class="d-flex align-items-center">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.766663599528!2d-99.98935608405174!3d20.433681213199545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d374a91fe4f961%3A0x14cabfb0d7d5f999!2sInplarsa%2C%20Ingenieria%20En%20Plasticos%20Reciclados!5e0!3m2!1ses!2smx!4v1579280455487!5m2!1ses!2smx"
-                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                width="100%" height="550" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </section>
-        <section class="d-flex flex-column align-items-center justify-content-center mt-4">
+        <section class="d-flex flex-column align-items-center justify-content-center mb-4 mb-lg-0 animated forwards fadeInUp wow mx-auto" data-wow-duration="2s">
             <div id="contact-form">
                 <div>
-                    <h2>Contactanos.</h2> 
-                    <h4>Responderemos a la brevedad.</h4> 
+                    <h2>Contactanos.</h2>
+                    <h4>Responderemos a la brevedad.</h4>
                 </div>
-                    <p id="failure">Oopsie...message not sent.</p>  
-                    <p id="success">Your message was sent successfully. Thank you!</p>
-            
-                       <form action="https://formspree.io/mpzdrzwq" method="POST">
-                        <div>
-                          <label for="name">
-                              <span class="required">Nombre: *</span> 
-                              <input type="text" id="name" name="name" value="" placeholder="Nombre" required="required" tabindex="1" autofocus="autofocus" />
-                          </label> 
-                        </div>
-                        <div>
-                          <label for="email">
-                              <span class="required">Email: *</span>
-                              <input type="email" id="email" name="email" value="" placeholder="Email" tabindex="2" required="required" />
-                          </label>  
-                        </div>
-                        <div>		          
-                          <label for="message">
-                              <span class="required">Mensaje: *</span> 
-                              <textarea id="message" name="message" placeholder="Mensaje." tabindex="5" required="required"></textarea> 
-                          </label>  
-                        </div>
-                        <div>		           
-                          <button name="submit" type="submit" id="submit" target="_blank">ENVIAR</button> 
-                        </div>
-                       </form>
-            
-                </div>
+                <p id="failure">Oopsie...ocurrio un error inesperado.</p>
+                <p id="success">Tu mensaje ha sido enviado correctamente.</p>
+
+                <form action="https://formspree.io/mpzdrzwq" method="POST">
+                    <div>
+                        <label for="name">
+                            <span class="required">Nombre: *</span>
+                            <input type="text" id="name" name="name" value="" placeholder="Nombre" required="required"
+                                tabindex="1" autofocus="autofocus" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">
+                            <span class="required">Email: *</span>
+                            <input type="email" id="email" name="email" value="" placeholder="Email" tabindex="2"
+                                required="required" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="message">
+                            <span class="required">Mensaje: *</span>
+                            <textarea id="message" name="message" placeholder="Mensaje." tabindex="5"
+                                required="required"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <button name="submit" type="submit" id="submit" target="_blank">ENVIAR</button>
+                    </div>
+                </form>
+
+            </div>
         </section>
     </main>
     <footer>
@@ -105,6 +118,20 @@
             </section>
         </section>
     </footer>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-72.14px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+        new WOW().init();
+    </script>
 </body>
 
 </html>
